@@ -13,78 +13,90 @@
 </head>
 
 <body class="body">
-  <header class="fixed-top" id="main-header">
-    <div class="container">
-      <a class="logo_nombre" href="index.html">
-        <img class="logo_codo" src="imagenes/codoacodo.png">
-        <span class="nombre-sitio">Three M Producciones</span>
 
-      </a>
-      <nav class="nav justify-content-center justify-content-lg-between align-items-center">
-        <ul>
-          <li><a class="nav-item" href="index.html">Inicio</a></li>
-          <li><a class="nav-item" href="#nosotros">Acerca de</a></li>
-          <li><a class="nav-item" href="#contacto">Contacto</a></li>
-        </ul>
+  <!-- header  -->
+  <nav class="fixed-top main-header">
 
-      </nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </label>
+    <a href="#" class="enlace">
+      <img class="logo_codo" src="imagenes/codoacodo.png">
+      <span class="nombre-sitio fw-bolder">3M Producciones</span>
+    </a>
+    <ul>
+      <li>
+        <a class="active" href="#inicio">Inicio</a>
+        <a id="a" href="#productos">Productos</a>
+        <a id="a" href="#nosotros">Nosotros</a>
+        <a id="a" href="#contacto">Contacto</a>
+      </li>
+    </ul>
 
-    </div>
+  </nav>
 
-  </header>
   <!-- Carrusel del imagenes -->
-  <div id="carouselExampleCaptions" class="carousel slide carrusel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+  <div id="inicio">
+    <div id="carouselExampleCaptions" class="carousel slide carrusel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/carousel1.jpg" class="d-block w-100 img-fluid " alt="Imagen de presentacion">
+          <div class="carousel-caption d-md-block">
+            <h5 class="fw-bolder text-warning">Festival del Trichaco</h5>
+            <p class="fw-bolder">14 mil personas, participamos en la logística.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5492616796653%26text%3DHola%2Blindo&e=AT0bBRbGQwgHRt8TvEq7gqXPxo8ZpPoA2gIxJg8C_L9_0VBBXWsX1YJrrsjKyxWe162maIQAiN9g2L497mbxCfGEI2lllemOwpHAVQ">Contratar</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/carousel2.jpg" class="d-block w-100 img-fluid " alt="Imagen de presentacion">
+          <div class="carousel-caption d-md-block">
+            <h5 class="fw-bolder text-warning">Cosquin Rock</h5>
+            <p class="fw-bolder">120 mil personas, participamos en la logística.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5492616796653%26text%3DHola%2Blindo&e=AT0bBRbGQwgHRt8TvEq7gqXPxo8ZpPoA2gIxJg8C_L9_0VBBXWsX1YJrrsjKyxWe162maIQAiN9g2L497mbxCfGEI2lllemOwpHAVQ">Contratar</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/carousel3.jpg" class="d-block w-100 img-fluid " alt="Imagen de presentacion">
+          <div class="carousel-caption d-md-block">
+            <h5 class="fw-bolder text-warning">Festival de la Cueca y el Damasco</h5>
+            <p class="fw-bolder">10 mil personas, participamos en la organización y logística..</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5492616796653%26text%3DHola%2Blindo&e=AT0bBRbGQwgHRt8TvEq7gqXPxo8ZpPoA2gIxJg8C_L9_0VBBXWsX1YJrrsjKyxWe162maIQAiN9g2L497mbxCfGEI2lllemOwpHAVQ">Contratar</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="imagenes/carousel1.jpg" class="d-block w-100 img-fluid " alt="Imagen de presentacion">
-        <div class="carousel-caption d-md-block">
-          <h5 class="fw-bolder text-warning">First slide label</h5>
-          <p class="fw-bolder">Some representative placeholder content for the first slide.</p>
-          <p>
-            <a class="btn btn-lg btn-primary" href="#">Contratar</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="imagenes/carousel2.jpg" class="d-block w-100 img-fluid " alt="Imagen de presentacion">
-        <div class="carousel-caption d-md-block">
-          <h5 class="fw-bolder text-warning">Second slide label</h5>
-          <p class="fw-bolder">Some representative placeholder content for the second slide.</p>
-          <p>
-            <a class="btn btn-lg btn-primary" href="#">Contratar</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="imagenes/carousel3.jpg" class="d-block w-100 img-fluid " alt="Imagen de presentacion">
-        <div class="carousel-caption d-md-block">
-          <h5 class="fw-bolder text-warning">Third slide label</h5>
-          <p class="fw-bolder">Some representative placeholder content for the third slide.</p>
-          <p>
-            <a class="btn btn-lg btn-primary" href="#">Contratar</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
   </div>
 
-  <section class="artistas">
+  <section id="productos" class="artistas">
     <!-- titulo de artistas -->
     <div class="container">
       <div class="text-center">
@@ -100,9 +112,8 @@
         <div class="card">
           <img src="imagenes/artista1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <h5 class="card-title fw-bolder">Chaqueño Palavecino</h5>
+            <p class="card-text">Oscar Esperanza Palavecino más conocido como Chaqueño Palavecino es un cantante argentino de música folclórica.</p>
           </div>
         </div>
       </div>
@@ -110,9 +121,8 @@
         <div class="card">
           <img src="imagenes/artista2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <h5 class="card-title fw-bolder">Soledad Pastorutti</h5>
+            <p class="card-text">Soledad Pastorutti, conocida simplemente como Soledad o por su apodo La Sole, es una cantante, compositora, actriz y conductora argentina.</p>
           </div>
         </div>
       </div>
@@ -120,9 +130,8 @@
         <div class="card">
           <img src="imagenes/artista3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content.</p>
+            <h5 class="card-title fw-bolder">El Indio Lucio Rojas</h5>
+            <p class="card-text">Lucio Rojas es un artista de gran calidad, sensibilidad y fuerza interpretativa, que acudirá a un repertorio musical de profunda raíz folklórica.</p>
           </div>
         </div>
       </div>
@@ -130,9 +139,8 @@
         <div class="card">
           <img src="imagenes/artista4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <h5 class="card-title fw-bolder">Lázaro Caballero</h5>
+            <p class="card-text">Lázaro Caballero Moreno el joven artista que está cosechando premios en los festivales chamameceros, el formoseño ha girado por los escenarios y festivales de todo el país.</p>
           </div>
         </div>
       </div>
@@ -148,13 +156,21 @@
     <img src="imagenes/objetivo.png" class="img-honolulu img-fluid">
     <div class="txt-honolulu bg-dark text-white">
       <h5 class="fw-bolder">¿Quiénes somos?</h5>
-      <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu
-        es
-        la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al
-        área
-        urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de honolulu han formado una ciudad-
-        condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
-      <button type="button" class="btn btn-outline-secondary">Conoce mas</button>
+      <p>
+        Somos un equipo multidisciplinario que cuenta con más de 30 años de experiencia en el mundo del entretenimiento.
+        3M Producciones es hoy una de las empresas líderes en organización y producción
+        integral de eventos en Argentina con más de 1000 casos de éxito y la capacidad de brindar soluciones a medida en
+        cada nuevo desafío.
+      </p>
+      <h5 class="fw-bolder">¿Cuál es nuestro objetivo?</h5>
+      <p>
+        Nuestro objetivo es defender la cultura Argentina brindando lo mejor de nosotros para llevar a cabo eventos de
+        temáticas culturales.
+        Eventos que , para nosotros, significan despertar el patriotismo y la unión en las personas.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        <a href="#inicio">Conoce más</a>
+      </button>
     </div>
   </div>
 
