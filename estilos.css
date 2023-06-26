@@ -181,3 +181,25 @@ button a {
 .pie-de-pagina a {
     color: white;
 }
+
+/* tickets */
+/* descuentos */
+.descuentos{
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.fomulario{
+    /* margin-top: 80px; */
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 2px;
+    text-align: center;
+
+}         
+.label{
+    text-align: left;
+}           

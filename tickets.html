@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tickets</title>
+</head>
+
+<body>
+    <div>
+        <!-- header  -->
+        <nav class="fixed-top main-header">
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </label>
+            <a href="#" class="enlace">
+                <img class="logo_codo" src="imagenes/codoacodo.png">
+                <span class="nombre-sitio fw-bolder">3M Producciones</span>
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="#inicio">Inicio</a>
+                    <a id="a" href="#productos">Productos</a>
+                    <a id="a" href="#nosotros">Nosotros</a>
+                    <a id="a" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- fin header  -->
+        <!-- descuentos -->
+        <div class="descuentos">
+            <div class="row row-cols-1 row-cols-md-3 g-1">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bolder">Estudiante</h5>
+                            <p class="card-text">Tiene descuentos</p>
+                            <h5 class="card-title fw-bolder">80%</h5>
+                            <p class="card-text">* presentar documentación</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bolder">Trainee</h5>
+                            <p class="card-text">Tiene descuentos</p>
+                            <h5 class="card-title fw-bolder">50%</h5>
+                            <p class="card-text">* presentar documentación</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bolder">Junior</h5>
+                            <p class="card-text">Tiene descuentos</p>
+                            <h5 class="card-title fw-bolder">15%</h5>
+                            <p class="card-text">* presentar documentación</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+        </div>
+        <!-- fin descuentos -->
+
+        <!-- ventas -->
+        <div class="ventas">
+            <div class="text-center">
+                <h5 class="fw-bolder">VENTA</h5>
+                <h1>VALOR DE TICKET $1000</h1>
+            </div>
+
+            <div class="fomulario">
+                <div class="row mb-2">
+                    <div class="col">
+                        <div class="mb-3">
+                            <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <input type="text" id="apellido" class="form-control" placeholder="Apellido">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <input type="text" id="correo" class="form-control" placeholder="Correo">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <div class="mb-3">
+                            <p class="label">Cantidad</p>
+                            <input type="number" id="cantidad" class="form-control" placeholder="Cantidad">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <p class="label">Categoría</p>
+                            <select id="categoria" class="form-select">
+                                <option value="0">sin categoria</option>
+                                <option value="1">estudiante</option>
+                                <option value="2">trainee</option>
+                                <option value="3">junior</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-outline mb-4">
+                    <p id="salida" class="form-control bg-info aling-text-r">Total a Pagar: $</p>
+
+
+                </div>
+                <button class="btn btn-success w-40 mb-3" id="reset">Borrar</button>
+                <button class="btn btn-success w-40 mb-3" id="calcular">Resumen</button>
+            </div>
+
+
+        </div>
+
+        <!-- fin ventas -->
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
